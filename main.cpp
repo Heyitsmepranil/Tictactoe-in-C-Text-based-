@@ -12,6 +12,7 @@ Program Description: A simple TicTacToe/Alucross Game with move counter, data st
 using namespace std;
 
 void option1();
+void option2();
 
 int main()
 {
@@ -97,4 +98,9 @@ void option1()
 		cin >> rematch;
 
 	} while (rematch == 'Y' || rematch == 'y');
+}
+
+void option2()
+{
+	cout << "Leaderboard feature is not implemented yet." << endl;
 }
