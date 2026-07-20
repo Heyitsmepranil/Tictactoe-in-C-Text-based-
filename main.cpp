@@ -20,19 +20,26 @@ int main()
 
 	mainmenu m;
 
-	choice = m.display();
 	do
 	{
+		choice = m.display();
+		system("cls");
 		switch (choice)
 		{
 		case 1:
 			option1();
+			system("pause");
+			system("cls");
 			break;
 		case 2:
+			option2();
+			system("pause");
+			system("cls");
 			break;
 		case 3:
 			cout << "Exiting the game." << endl;
 			system("pause");
+			system("cls");
 			break;
 		default:
 			cout << "Invalid choice. Please try again." << endl;

@@ -18,3 +18,13 @@ void playerinfo::score()
 	cout << "Player O's score: " << playeroscore << endl;
 	cout << "Player X's score: " << playerxscore << endl;
 }
+
+void playerinfo::store()
+{
+
+}
+
+void playerinfo::viewscore()
+{
+
+}
