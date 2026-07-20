@@ -6,17 +6,50 @@ Program Description: A simple TicTacToe/Alucross Game with move counter, data st
 //main function that runs the game and calls the functions from the other classes to run the game properly.
 
 #include<iostream>
+#include"mainmenu.h"
 #include"playerinfo.h"
 #include"tictactoe.h"
 using namespace std;
 
+void option1();
+
 int main()
 {
-	int end = 0, i = 1;
+	int choice;
+
+	mainmenu m;
+
+	choice = m.display();
+	do
+	{
+		switch (choice)
+		{
+		case 1:
+			option1();
+			break;
+		case 2:
+			break;
+		case 3:
+			cout << "Exiting the game." << endl;
+			system("pause");
+			break;
+		default:
+			cout << "Invalid choice. Please try again." << endl;
+			break;
+		}
+	} while (choice != 3);
+	return 0;
+}
+
+void option1()
+{
+	int end = 0, i = 1, choice;
 	double condition;
 	int c1;
 	char c2, rematch;
 
+
+	system("cls");
 	TicTacToe t;
 
 	do
@@ -64,7 +97,4 @@ int main()
 		cin >> rematch;
 
 	} while (rematch == 'Y' || rematch == 'y');
-
-
-	return 0;
 }
