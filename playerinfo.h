@@ -9,7 +9,7 @@ protected:
 	int playerxscore = 0; //Stores the score of player.
 	int playeroscore = 0;
 public:
-	playerinfo(); //Constructor that takes the name of the players and stores them for future use.
+	void info(); //Constructor that takes the name of the players and stores them for future use.
 	void score(); //Function that displays the score of the players whenever it is called and needed.
 	void store();
 	void viewscore();

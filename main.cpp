@@ -11,13 +11,13 @@ Program Description: A simple TicTacToe/Alucross Game with move counter, data st
 #include"tictactoe.h"
 using namespace std;
 
-void option1();
-void option2();
+void option1(TicTacToe);
 
 int main()
 {
 	int choice;
 
+	TicTacToe t;
 	mainmenu m;
 
 	do
@@ -27,12 +27,12 @@ int main()
 		switch (choice)
 		{
 		case 1:
-			option1();
+			option1(t);
 			system("pause");
 			system("cls");
 			break;
 		case 2:
-			option2();
+			t.viewscore();
 			system("pause");
 			system("cls");
 			break;
@@ -49,16 +49,15 @@ int main()
 	return 0;
 }
 
-void option1()
+void option1(TicTacToe t)
 {
 	int end = 0, i = 1, choice;
 	double condition;
 	int c1;
 	char c2, rematch;
 
-
+	t.info();
 	system("cls");
-	TicTacToe t;
 
 	do
 	{
@@ -105,9 +104,4 @@ void option1()
 		cin >> rematch;
 
 	} while (rematch == 'Y' || rematch == 'y');
-}
-
-void option2()
-{
-	cout << "Leaderboard feature is not implemented yet." << endl;
 }
