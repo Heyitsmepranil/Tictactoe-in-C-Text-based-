@@ -22,7 +22,17 @@ void playerinfo::score()
 
 void playerinfo::store()
 {
-
+	ifstream out;
+	out.open("score.txt", ios::out);
+	if (out.fail())
+	{
+		cout << "Unable to open the file." << endl;
+		system("pause");
+	}
+	else
+	{
+		
+	}
 }
 
 void playerinfo::viewscore()
