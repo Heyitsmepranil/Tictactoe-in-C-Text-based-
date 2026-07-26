@@ -38,8 +38,6 @@ int main()
 			break;
 		case 3:
 			cout << "Exiting the game." << endl;
-			system("pause");
-			system("cls");
 			break;
 		default:
 			cout << "Invalid choice. Please try again." << endl;
