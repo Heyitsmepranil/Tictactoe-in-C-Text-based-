@@ -90,7 +90,7 @@ void option1(TicTacToe t)
 			{
 				i--;
 			}
-
+			
 			system("cls");
 			t.view();
 		}
@@ -98,6 +98,7 @@ void option1(TicTacToe t)
 		end = 0;
 		t.reset();
 
+		t.store();
 		t.score();
 
 		cout << "Rematch? (Y/N): ";

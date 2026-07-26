@@ -11,8 +11,8 @@ protected:
 public:
 	void info(); //Constructor that takes the name of the players and stores them for future use.
 	void score(); //Function that displays the score of the players whenever it is called and needed.
-	void store();
-	void viewscore();
+	void store(); //Funtion that stores and updates the leaderboard
+	void viewscore(); //Function that displays the leaderboard
 };
 
 #endif

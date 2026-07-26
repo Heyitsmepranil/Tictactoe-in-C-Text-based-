@@ -7,7 +7,7 @@ int mainmenu::display()
 
 	cout << "Welcome to Tic Tac Toe!" << endl;
 	cout << "1. Start Game" << endl;
-	cout << "2. Leaderboard" << endl;
+	cout << "2. Score Log" << endl;
 	cout << "3. Exit" << endl;
 	cout << "Please select an option: ";
 	cin >> option;

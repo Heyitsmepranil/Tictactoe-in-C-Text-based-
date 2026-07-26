@@ -22,33 +22,41 @@ void playerinfo::score()
 
 void playerinfo::store()
 {
-	ifstream out;
-	out.open("score.txt", ios::out);
+	ofstream out("score.txt");
+	ifstream in("score.txt");
+
+	int score;
+	string player;
+
 	if (out.fail())
 	{
 		cout << "Unable to open the file." << endl;
+		out.close();
+		in.close();
 		system("pause");
 	}
 	else
 	{
-		
+		out << playerx << " " << playerxscore << " vs " << playero << " " << playeroscore << endl;
+		out.close();
 	}
 }
 
 void playerinfo::viewscore()
 {
 	char ch;
+	int c;
 	ifstream in;
 	in.open("score.txt", ios::in);
 	if (in.fail())
 	{
 		cout << "Unable to oprn the file." << endl;
+		in.close();
 		system("pause");
 	}
 	else
 	{
-		cout << "LeaderBoard: " << endl;
-		cout << "Name\t\tScore" << endl;
+		cout << "Score Log: " << endl;
 		while (in.get(ch))
 		{
 			cout << ch;
