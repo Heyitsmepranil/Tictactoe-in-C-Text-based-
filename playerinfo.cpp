@@ -58,7 +58,6 @@ void playerinfo::viewscore()
 		cout << "Score Log: " << endl;
 		while (in.get(ch))
 		{
-			//if (ch == ' ') cout << endl;
 			cout << ch;
 		}
 		cout << endl;
