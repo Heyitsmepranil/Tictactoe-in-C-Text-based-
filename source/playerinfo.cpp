@@ -2,7 +2,7 @@
 
 #include<iostream>
 #include<fstream>
-#include"playerinfo.h"
+#include"header/playerinfo.h"
 
 using namespace std;
 

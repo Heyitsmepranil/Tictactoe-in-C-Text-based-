@@ -6,9 +6,9 @@ Program Description: A simple TicTacToe/Alucross Game with move counter, data st
 //main function that runs the game and calls the functions from the other classes to run the game properly.
 
 #include<iostream>
-#include"mainmenu.h"
-#include"playerinfo.h"
-#include"tictactoe.h"
+#include"header/mainmenu.h"
+#include"header/playerinfo.h"
+#include"header/tictactoe.h"
 using namespace std;
 
 void option1(TicTacToe);

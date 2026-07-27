@@ -1,8 +1,8 @@
 // The code below defines the function declared in the header file tictactoe.h. 
 
 #include<iostream>
-#include"playerinfo.h"
-#include"tictactoe.h"
+#include"header/playerinfo.h"
+#include"header/tictactoe.h"
 
 using namespace std;
 

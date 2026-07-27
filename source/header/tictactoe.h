@@ -1,6 +1,6 @@
 #ifndef TICTACTOE_H
 #define TICTACTOE_H
-#include"playerinfo.h"
+#include"header/playerinfo.h"
 class TicTacToe : public playerinfo // Class responsible for major logic and functionality of the game.
 {
 
