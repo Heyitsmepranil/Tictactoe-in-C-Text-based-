@@ -22,8 +22,8 @@ void playerinfo::score()
 
 void playerinfo::store()
 {
-	ofstream out("score.txt");
-	ifstream in("score.txt");
+	ofstream out;
+	out.open("score.txt", ios::app);
 
 	int score;
 	string player;
@@ -32,7 +32,6 @@ void playerinfo::store()
 	{
 		cout << "Unable to open the file." << endl;
 		out.close();
-		in.close();
 		system("pause");
 	}
 	else
@@ -59,6 +58,7 @@ void playerinfo::viewscore()
 		cout << "Score Log: " << endl;
 		while (in.get(ch))
 		{
+			//if (ch == ' ') cout << endl;
 			cout << ch;
 		}
 		cout << endl;

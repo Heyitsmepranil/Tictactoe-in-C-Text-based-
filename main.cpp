@@ -94,13 +94,13 @@ void option1(TicTacToe t)
 		}
 
 		end = 0;
-		t.reset();
 
-		t.store();
+		t.reset();
 		t.score();
 
 		cout << "Rematch? (Y/N): ";
 		cin >> rematch;
 
 	} while (rematch == 'Y' || rematch == 'y');
+	t.store();
 }
