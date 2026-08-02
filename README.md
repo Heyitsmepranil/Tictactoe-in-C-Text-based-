@@ -1,5 +1,5 @@
 # TICTACTOE in C++ (text_based)
-- Tictactoe is a world remowned simple and fun game that is played by 2 people mainly when in a boring situation.
+- Tictactoe is a world renowned simple and fun game that is played by 2 people mainly when in a boring situation.
 
 # Installations
 First, clone this repository:
