@@ -12,7 +12,7 @@ private:
 public:
 
 	void view();//Function that displays the board and player names whenever it is called and needed.
-	double edit(int choice, char player); //Function responsible for taking the choices of the players and applyinf it in the board. It also checks weather the game has ended or not.
+	double edit(int choice, char player); //Function responsible for taking the choices of the players and apply it in the board. It also checks weather the game has ended or not.
 	int check(); //Functions to check the winning conditions has met or not.
 	void reset(); //Function responsible to reset the board and the variables that checks for the conditions for the game to end.
 
